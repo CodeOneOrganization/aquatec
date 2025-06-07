@@ -1,0 +1,33 @@
+.button {
+
+    cursor: pointer;
+
+    width: 23.281vw;
+    height: 3.49vw;
+
+    font-size: 1.25vw;
+
+    background-color: var(--color-blue);
+    color: #fff;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 1.875vw;
+}
+
+
+@media screen and (max-width: 700px) {
+    .button {
+
+        width: 73.5vw;
+        height: 12.25vw;
+
+        font-size: 4.68vw;
+
+        padding-inline: 7vw;
+    }
+}

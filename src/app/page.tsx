@@ -1,7 +1,20 @@
+import Nav from "./components/Nav/Nav";
+import Hero from "./layouts/Hero/Hero";
+import Preloader from "./layouts/Preloader/Preloader"
+
 export default function Home() {
   return (
-    <main>
-
-    </main>
+    <>
+      <Preloader/>  
+      <header>
+        <Nav/>
+      </header>
+      <main>
+        <div className="line"></div>
+        <div className="line"></div>
+        <Hero />
+        {/* <Hero /> */}
+      </main>
+    </>
   );
 }

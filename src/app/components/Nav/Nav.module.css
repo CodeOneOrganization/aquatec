@@ -1,0 +1,76 @@
+.nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    border-bottom: 0.026vw solid #00000052;
+
+    width: 100vw;
+    height: 6.406vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 2.123vw;
+
+}
+
+.nav img {
+    width: 8.438vw;
+    object-fit: cover;
+}
+
+
+.menuButton {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 0.469vw;
+
+    font-size: 1.25vw;
+    color: var(--color-blue);
+
+    border: none;
+    background-color: transparent;
+}
+
+.menuButton div .line:last-of-type {
+    margin-top: 0.4vw;
+}
+
+.menuButton .line {
+    width: 5.781vw;
+    height: 0.15vw;
+
+    background-color: var(--color-blue);
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .nav {
+        height: 15vw;
+    }
+
+    .nav img {
+        width: 20.25vw;
+
+    }
+
+
+    .menuButton {
+        font-size: 6vw;
+    }
+
+    .menuButton .line {
+        width: 27.75vw;
+        height: 0.5vw;
+    }
+
+    .menuButton div .line:last-of-type {
+        margin-top: 1.5vw;
+    }
+}
