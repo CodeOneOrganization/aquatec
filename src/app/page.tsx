@@ -1,7 +1,13 @@
+import Hero from "./layouts/Hero/Hero";
+import Preloader from "./layouts/Preloader/Preloader"
+
 export default function Home() {
   return (
-    <main>
-
-    </main>
+    <>
+    <Preloader/>
+      <main>
+        <Hero/>
+      </main>
+    </>
   );
 }
