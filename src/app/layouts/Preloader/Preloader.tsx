@@ -40,16 +40,17 @@ export default function Preloader() {
             duration: 2,
             stagger: 0.1,
             ease: 'power2.inOut',
-            delay: 1.1,
+            delay: 1.3,
 
-            onComplete: () => {
-
-                gsap.to(`.${styles.preloader}`, {
-                    display: 'none'
-                })
-
-            }
         })
+
+        gsap.to(`.${styles.preloader}`, {
+            height: '0',
+            duration: 2,
+            ease: 'power2.inOut',
+            delay: 1.3,
+        })
+
 
 
     }, [])
