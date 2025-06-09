@@ -1,0 +1,150 @@
+.about {
+    padding-inline: 3.123vw;
+
+
+}
+
+
+.upper {
+
+    margin-top: 5.854vw;
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+.upper h2 {
+    font-size: 5vw;
+    font-weight: 900;
+    color: var(--color-blue);
+}
+
+.paragraphs p {
+    font-size: 2.083vw;
+    color: var(--color-blue);
+}
+
+.paragraphs p:last-of-type {
+    margin-top: 1.406vw;
+}
+
+.bottom {
+
+    margin-top: 3.354vw;
+
+    display: flex;
+
+}
+
+.bottom div {
+    width: 37.042vw;
+    height: 26.458vw;
+
+    background-color: transparent;
+    border: 0.1vw solid var(--color-blue);
+}
+
+.bottom div:not(:nth-of-type(1)) {
+    border-left: 0;
+}
+
+.card {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 6.667vw;
+    color: var(--color-blue);
+}
+
+.card span:last-child {
+    font-size: 1.25vw;
+    color: var(--color-blue);
+}
+
+.card span:first-child {
+    position: absolute;
+
+    top: 3.698vw;
+    right: 4.115vw;
+
+    font-size: 6.667vw;
+    color: var(--color-blue);
+}
+
+
+@media screen and (max-width: 700px) {
+    .upper {
+
+        margin-top: 20vw;
+
+        flex-direction: column;
+        justify-content: initial;
+
+    }
+
+    .upper h2 {
+        font-size: 15vw;
+    }
+
+    .paragraphs {
+        margin-top: 3vw;
+    }
+
+    .paragraphs p {
+        font-size: 3vw;
+
+    }
+
+    .paragraphs p:last-of-type {
+        margin-top: 4.5vw;
+
+        & strong {
+            font-size: 5vw;
+        }
+    }
+
+    .bottom {
+
+        margin-top: 10.354vw;
+        flex-direction: column;
+
+    }
+
+    .bottom div:not(:nth-of-type(1)) {
+        border: 0.1vw solid var(--color-blue);
+
+    }
+
+    .bottom div {
+        width: 100%;
+        height: 101vw;
+    }
+
+    .card h3 {
+        font-size: 26.4vw;
+        color: var(--color-blue);
+    }
+
+    .card span:last-child {
+        font-size: 4.95vw;
+        color: var(--color-blue);
+    }
+
+    .card span:first-child {
+
+        top: 12.75vw;
+        right: 13.5vw;
+
+        font-size: 21.44vw;
+    }
+}

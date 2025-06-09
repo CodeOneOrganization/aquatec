@@ -15,7 +15,9 @@
 
     padding-inline: 2.123vw;
 
-}
+
+    z-index: 99;
+}   
 
 .nav img {
     width: 8.438vw;

@@ -13,9 +13,9 @@ export default function Hero() {
            
 
                 <p>
-                    A AquaTec é especializada em desentupimentos rápidos,
-                    limpos e sem quebrar nada. Com equipe treinada e
-                    equipamentos modernos, oferecemos soluções eficientes
+                    A AquaTec é especializada em desentupimentos rápidos,<br />
+                    limpos e sem quebrar nada. Com equipe treinada e <br />
+                    equipamentos modernos, oferecemos soluções eficientes <br />
                     para residências, comércios e indústrias.
                 </p>
             </div>
