@@ -6,7 +6,7 @@ import Preloader from "./layouts/Preloader/Preloader"
 export default function Home() {
   return (
     <>
-      {/* <Preloader/>   */}
+      <Preloader/>  
       <header>
         <Nav/>
       </header>
