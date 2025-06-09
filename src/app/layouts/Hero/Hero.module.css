@@ -48,7 +48,12 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.middle p{
+  color: var(--color-blue);
+  font-size: 1.25vw;
 }
 
 .image img {
@@ -75,18 +80,14 @@
     justify-content: initial;
     align-items: initial;
 
-    gap: 5.5vw;
+    gap: 5vw;
 
     margin-bottom: 0.5vw;
-
-    /* background-color: red; */
-    width:  73.5vw;
 
   }
 
   .middle p {
-    text-align: justify;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .image {
