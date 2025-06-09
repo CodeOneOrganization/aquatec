@@ -15,9 +15,8 @@
 
     padding-inline: 2.123vw;
 
-
-    z-index: 99;
-}   
+    z-index: 1;
+}
 
 .nav img {
     width: 8.438vw;
@@ -25,7 +24,10 @@
 }
 
 
+.menuButtonClose,
 .menuButton {
+
+
     cursor: pointer;
 
     display: flex;
@@ -35,14 +37,23 @@
     font-size: 1.25vw;
     color: var(--color-blue);
 
+
     border: none;
     background-color: transparent;
+
 }
 
+.menuButtonClose {
+    color: #fff;
+
+}
+
+.menuButtonClose div .line:last-of-type,
 .menuButton div .line:last-of-type {
     margin-top: 0.4vw;
 }
 
+.menuButtonClose .line,
 .menuButton .line {
     width: 5.781vw;
     height: 0.15vw;
@@ -50,6 +61,47 @@
     background-color: var(--color-blue);
 }
 
+.menuButtonClose .line {
+    background-color: #fff;
+}
+
+
+.overlay {
+    padding-inline: 2.123vw;
+
+    overflow: hidden;
+
+    position: fixed;
+    top: 0vw;
+    left: 0;
+
+    transform: translateY(-100%);
+
+    width: 100vw;
+    height: 6.406vw;
+    background-color: var(--color-blue);
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay menu {
+
+
+    list-style: none;
+    display: flex;
+
+    gap: 1.25vw;
+}
+
+.overlay menu li {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -63,16 +115,48 @@
     }
 
 
+    .menuButtonClose,
     .menuButton {
         font-size: 6vw;
     }
 
+    .menuButtonClose .line,
     .menuButton .line {
         width: 27.75vw;
         height: 0.5vw;
     }
 
+    .menuButtonClose div .line:last-of-type,
     .menuButton div .line:last-of-type {
         margin-top: 1.5vw;
+    }
+
+
+    .overlay {
+        padding-inline: 2.123vw;
+
+        overflow: hidden;
+
+        position: fixed;
+        top: 0vw;
+        left: 0;
+
+        height: 56.406vw;
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .overlay menu {
+        
+        flex-direction: column;
+        
+        gap: 5.25vw;
+    }
+
+    .overlay menu li {
+
     }
 }

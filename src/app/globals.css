@@ -11,12 +11,6 @@
 
 }
 
-section{
-  border-bottom: 0.026vw solid #00000052;
-  padding-bottom: 1vw;
-
-}
-
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
