@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--font-inter);
+  font-family: var(--font-inter), sans-serif;
 }
 
 :root{
@@ -18,7 +18,7 @@
 
 
 html{
-    font-weight: 400;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   line-height: 1;
@@ -29,12 +29,14 @@ html{
   position: fixed;
   top: 0;
 
-  height: 100vh;
+  height: 100%;
   width: 0.026vw;
 
   /* width: 10vw; */
 
   background-color: #00000052;
+
+  z-index: 998;
 }
 
 .line:last-of-type{
