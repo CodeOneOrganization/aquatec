@@ -1,6 +1,10 @@
 .services {
+    position: relative;
     padding-inline: 3.123vw;
 
+    border-bottom: 0.026vw solid #00000052;
+
+    padding-bottom: 1vw;
 }
 
 .texts {
@@ -21,4 +25,47 @@
 .texts p {
     font-size: 2.083vw;
     color: var(--color-blue);
+}
+
+.slide {
+    cursor: grab;
+    margin-top: 7.917vw;
+}
+
+.slide:active {
+    cursor: grabbing;
+}
+
+.help {
+    text-transform: uppercase;
+    position: absolute;
+    top: 19vw;
+    color: var(--color-blue);
+}
+
+@media screen and (max-width: 700px) {
+    .texts {
+
+        margin-top: 5.958vw;
+        flex-direction: column-reverse;
+        align-items: initial;
+        justify-content: initial;
+    }
+
+    .texts h2{
+        font-size: 15vw;
+    }
+
+    .texts p{
+        font-size: 3vw;
+    }
+
+    .slide{
+        margin-top: 10vw;
+    }
+
+    .help{
+        top: 39vw;
+        font-size: 3vw;
+    }
 }
