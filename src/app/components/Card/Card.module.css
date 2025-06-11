@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 31.406vw;
+    height: 32.083vw;
+
+    padding-left: 1.094vw;
+    padding-top: 0.885vw;
+
+    padding: 1.094vw 0vw 1.094vw 1.094vw;
+
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 2.411vw;
+    color: #fff;
+}
+
+.card p {
+    color: #fff;
+    width: 22.552vw;
+}
+
+.card picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .card {
+
+        width: 100%;
+        height: 101.25vw;;
+
+        padding: 3.5vw 0vw 3.5vw 3.5vw;
+
+    }
+
+    .card h3{
+        font-size: 10vw;
+    }
+
+    .card p{
+        width: 100%;
+        font-size: 3.5vw;
+    }
+}
