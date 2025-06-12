@@ -36,8 +36,6 @@ export default function Card({ title, url, paragraph }: Iprops) {
             trigger: `.${styles.services}`,
             onEnter: () => animationCard(),
 
-            markers: true,
-
             start: '50% 100%'
         })
 
