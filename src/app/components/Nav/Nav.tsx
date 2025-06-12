@@ -56,7 +56,7 @@ export default function Nav() {
                     <li onClick={() => {scrollTo('#services'); closeOverlay()}}>SERVIÇOS</li>
                     <li onClick={() => {scrollTo('#about'); closeOverlay()}}>NOSSO TRABALHO</li>
                     <li onClick={() => {scrollTo('#footer'); closeOverlay()}}>CONTATO</li>
-                    <li onClick={() => {scrollTo('#footer'); closeOverlay()}}>LOCALIZAÇÃO</li>
+                    <li onClick={() => {scrollTo('#footer'); closeOverlay()}}>INFORMAÇÕES</li>
                 </menu>
 
                 <button className={styles.menuButtonClose} onClick={()=> closeOverlay()}>
