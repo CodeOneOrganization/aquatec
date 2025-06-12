@@ -2,12 +2,14 @@ import styles from './Button.module.css'
 
 
 interface Iprops {
-    text: string
+    text: string,
+    backGround: string,
+    color: string,
 }
 
-export default function Button({ text }: Iprops) {
+export default function Button({ text, backGround, color }: Iprops) {
     return (
-        <button className={styles.button}>
+        <button className={styles.button} style={{backgroundColor: `${backGround}`, color: `${color}`}}>
             {text}
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="15" cy="15" r="15" fill="white" />

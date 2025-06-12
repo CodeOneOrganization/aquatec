@@ -23,7 +23,7 @@ export default function Services() {
     }, []);
 
     return (
-        <section className={styles.services}>
+        <section className={styles.services} id='services'>
             <div className={styles.texts}>
                 <p>
                     A Aquatec é especialista em desentupimento de tudo, <br />
