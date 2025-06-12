@@ -2,8 +2,9 @@
 
 import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { Smooth } from "@/app/Services/Smooth";
+
 
 type IProps = {
     children: React.ReactNode;
@@ -13,15 +14,7 @@ export default function SmoothScroll({ children }: IProps) {
 
     useEffect(() => {
 
-        gsap.registerPlugin(ScrollSmoother, ScrollTrigger)
-
-        ScrollSmoother.create({
-            wrapper: '#smooth-wrapper',
-            content: '#smooth-content',
-
-            smooth: 2,
-            smoothTouch: 0.5
-        });
+        const smooth = new Smooth()
 
     }, [])
 

@@ -9,6 +9,11 @@ interface Iprops {
 }
 
 export default function Card({ title, url, paragraph }: Iprops) {
+
+    const goToWhatsApp = (message: string) => {
+        window.open(`https://api.whatsapp.com/send?phone=8191293041&text=${message}.`, '_blank')
+    }
+
     return (
         <article className={styles.card}>
 
@@ -19,8 +24,9 @@ export default function Card({ title, url, paragraph }: Iprops) {
                 <picture><img src={url} alt="" /></picture>
             </div>
 
-
-            <Button text='SOLICITAR SERVIÇO' />
+            <div onClick={() => goToWhatsApp(`olá, gostaria de solicitar o serviço de: ${paragraph}`)}>
+                <Button text='SOLICITAR SERVIÇO' backGround='#0B5294' color='#fff' />
+            </div>
         </article>
     )
 }

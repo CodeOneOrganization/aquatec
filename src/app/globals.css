@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-inter);
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -16,11 +17,13 @@
   height: 0;
 }
 
+a{
+  text-decoration: none;
+}
 
 html{
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   line-height: 1;
 }
 

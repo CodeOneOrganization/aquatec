@@ -1,0 +1,114 @@
+.footer {
+  padding-inline: 2.123vw;
+
+  border-bottom: 0.026vw solid #00000052;
+
+  padding-bottom: 1vw;
+}
+
+.title {
+
+  height: 23.177vw;
+
+  margin-top: 8.979vw;
+  font-size: 19.167vw;
+  font-weight: 900;
+  text-align: center;
+  font-family: var(--font-inter), sans-serif;
+
+  color: var(--color-blue);
+}
+
+.title span {
+  color: transparent;
+  -webkit-text-stroke: 0.16vw #004b94;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.navigation {
+
+  margin-top: 5vw;
+  margin-left: 1.302vw;
+
+  display: flex;
+
+  gap: 7.24vw;
+}
+
+.navigation menu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.navigation menu h3 {
+  font-size: 2.411vw;
+  color: var(--color-blue);
+  font-weight: 900;
+}
+
+.navigation menu li {
+  cursor: pointer;
+  font-size: 1.563vw;
+  color: var(--color-blue);
+}
+
+.footer h4 {
+  font-size: 1.563vw;
+  text-align: center;
+  color: var(--color-blue);
+}
+
+.creator {
+  display: block;
+  font-size: 0.573vw;
+  color: var(--color-blue);
+  text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .footer{
+    padding-bottom: 10vw;
+  }
+
+  .title {
+    margin-top: 26vw;
+    font-size: 19.038vw;
+  }
+
+  .navigation {
+
+    margin-top: 12vw;
+
+    flex-direction: column;
+
+    gap: 13.24vw;
+  }
+
+  .navigation menu h3 {
+    font-size: 5.411vw;
+  }
+
+  .navigation menu li {
+    font-size: 4.563vw;
+  }
+
+  .navigation menu {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+
+  .footer h4 {
+    font-size: 3.563vw;
+  }
+
+  .creator {
+    font-size: 1.573vw;
+  }
+}

@@ -1,0 +1,99 @@
+.message {
+    background-color: var(--color-blue);
+
+    padding-inline: 2.123vw;
+
+    border-bottom: 0.026vw solid #00000052;
+
+    padding-bottom: 1vw;
+}
+
+.message h2{
+    color: #fff;
+
+    font-size: 5vw;
+
+    padding-top: 3.229vw;
+}
+
+.messageDiv,
+.serviceDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.messageDiv label,
+.serviceDiv label{
+    font-size: 1.25vw;
+    color: #fff;
+
+    font-weight: 800;
+}
+
+.messageDiv textarea,
+.serviceDiv input{
+    width: 40vw;
+    height: 2.448vw;
+
+    border: none;
+    outline: none;
+
+    padding-left: 1vw;
+}
+
+.serviceDiv{
+    margin-top: 2.083vw;
+}
+
+.messageDiv{
+    margin-top: 1.875vw;
+}
+
+.messageDiv textarea{
+    padding-top: 1vw;
+    height: 18.229vw;
+}
+
+.message button{
+    margin-top: 0.938vw;
+}
+
+@media screen and (max-width: 700px) {
+
+    .message{
+        padding-bottom: 10vw;
+    }
+
+    .message h2{
+        padding-top: 15vw;
+        font-size: 15vw; 
+        font-weight: 900;   
+    }
+
+    .messageDiv label,
+    .serviceDiv label{
+        font-size: 6vw;
+    }
+
+    .messageDiv textarea,
+    .serviceDiv input{
+        width: 90%;
+        height: 8.75vw;
+    }
+    
+     .messageDiv textarea{
+        height: 50vw;
+     }
+
+     .serviceDiv{
+        margin-top: 10.25vw;
+     }
+
+     .messageDiv{
+        margin-top: 5vw;
+     }
+
+     .message button{
+        margin-top: 2vw;
+     }
+}

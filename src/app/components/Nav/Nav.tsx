@@ -1,8 +1,9 @@
 'use client'
 
+import { Smooth } from '@/app/Services/Smooth';
 import styles from './Nav.module.css'
 import gsap from 'gsap'
-
+import ScrollSmoother from "gsap/ScrollSmoother";
 
 export default function Nav() {
 
@@ -24,12 +25,21 @@ export default function Nav() {
         })
     }
 
+    const scrollTo = (location: string) =>{
+
+        const smooth = new Smooth()
+
+        smooth.ScrollTo(location)
+
+    }
+
+
     return (
 
         <>
 
             <nav className={styles.nav}>
-                <img src="/logo.png" alt="logo" />
+                <img src="/logo.png" alt="logo" onClick={() => scrollTo('0')}/>
 
                 <button className={styles.menuButton} onClick={() => openOverlay()}>
                     menu
@@ -43,10 +53,10 @@ export default function Nav() {
 
             <div className={styles.overlay}>
                 <menu>
-                    <li>SERVIÇOS</li>
-                    <li>SOBRE</li>
-                    <li>CONTATO</li>
-                    <li>LOCALIZAÇÃO</li>
+                    <li onClick={() => {scrollTo('#services'); closeOverlay()}}>SERVIÇOS</li>
+                    <li onClick={() => {scrollTo('#about'); closeOverlay()}}>NOSSO TRABALHO</li>
+                    <li onClick={() => {scrollTo('#footer'); closeOverlay()}}>CONTATO</li>
+                    <li onClick={() => {scrollTo('#footer'); closeOverlay()}}>LOCALIZAÇÃO</li>
                 </menu>
 
                 <button className={styles.menuButtonClose} onClick={()=> closeOverlay()}>
