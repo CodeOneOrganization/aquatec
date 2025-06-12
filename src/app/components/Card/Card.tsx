@@ -36,8 +36,9 @@ export default function Card({ title, url, paragraph }: Iprops) {
             trigger: `.${styles.services}`,
             onEnter: () => animationCard(),
 
+            markers: true,
 
-            start: '55% 100%'
+            start: '50% 100%'
         })
 
         return () => { ScrollTrigger.killAll(); gsap.killTweensOf(`.${styles.card}`) }

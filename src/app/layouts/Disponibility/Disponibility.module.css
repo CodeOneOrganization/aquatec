@@ -1,0 +1,64 @@
+.disponibility {
+     padding-inline: 3.123vw;
+
+
+    border-bottom: 0.026vw solid #00000052;
+
+    padding-bottom: 4vw;
+    
+}
+
+
+.texts {
+
+    margin-top: 5.854vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.texts h2 {
+    font-size: 5vw;
+    font-weight: 900;
+    color: var(--color-blue);
+}
+
+.texts p {
+    font-size: 1.25vw;
+    color: var(--color-blue);
+}
+
+.disponibility img{
+    width: 39.063vw;
+    object-fit: cover;
+
+
+    margin-top: 10.552vw;
+    margin-left: 30.469vw;
+}
+
+@media screen and (max-width: 700px) {
+    .texts{
+        margin-top: 13vw;
+        flex-direction: column;
+        align-items: initial;
+        gap: 3vw;
+    }
+
+    .texts h2{
+        font-size: 15vw;
+
+    }
+
+    .texts p{
+        font-size: 3vw;
+
+    }
+    .disponibility img{
+        width: 98%;
+        margin-left: 0;
+    }
+}
