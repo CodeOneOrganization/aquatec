@@ -8,9 +8,13 @@ import styles from './Services.module.css'
 import Card from '@/app/components/Card/Card';
 import { useEffect, useState } from 'react';
 
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from 'gsap';
+
 export default function Services() {
 
     const [slidesPerView, setSlidesPerView] = useState(1);
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -45,14 +49,14 @@ export default function Services() {
                 navigation={true}
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
-                className={styles.slide}
+                className={styles.slides}
             >
-                <SwiperSlide><Card title='Desentupimento' url='/card1.jpg' paragraph='Limpeza e desobstrução de vazos sanitarios' /></SwiperSlide>
-                <SwiperSlide><Card title='Desentupimento' url='/card2.jpg' paragraph='Limpeza e desobstrução de pias' /></SwiperSlide>
-                <SwiperSlide><Card title='Hidrojateamento' url='/card3.jpg' paragraph='Melhor hidrojateamento do estado' /></SwiperSlide>
-                <SwiperSlide><Card title='Desentupimento' url='/card4.jpg' paragraph='Limpeza e desobstrução de fossas sépticas' /></SwiperSlide>
-                <SwiperSlide><Card title='Desentupimento' url='/card5.jpg' paragraph='Limpeza e desobstrução de ralos' /></SwiperSlide>
-                <SwiperSlide><Card title='Outros' url='/card1.jpg' paragraph='Mande uma mensagem especifica' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Desentupimento' url='/card1.jpg' paragraph='Limpeza e desobstrução de vazos sanitarios' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Desentupimento' url='/card2.jpg' paragraph='Limpeza e desobstrução de pias' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Hidrojateamento' url='/card3.jpg' paragraph='Melhor hidrojateamento do estado' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Desentupimento' url='/card4.jpg' paragraph='Limpeza e desobstrução de fossas sépticas' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Desentupimento' url='/card5.jpg' paragraph='Limpeza e desobstrução de ralos' /></SwiperSlide>
+                <SwiperSlide className={styles.slide}><Card title='Outros' url='/card1.jpg' paragraph='Mande uma mensagem especifica' /></SwiperSlide>
 
             </Swiper>
         </section>

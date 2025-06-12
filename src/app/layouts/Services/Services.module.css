@@ -27,12 +27,13 @@
     color: var(--color-blue);
 }
 
-.slide {
+.slides {
+    
     cursor: grab;
     margin-top: 7.917vw;
 }
 
-.slide:active {
+.slides:active {
     cursor: grabbing;
 }
 
