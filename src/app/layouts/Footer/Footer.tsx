@@ -25,8 +25,7 @@ export default function Footer() {
                 </menu>
 
                 <menu>
-                    <h3>LOCALIZAÇÃO</h3>
-                    <li>Rua tal, bairro, cidade / PE</li>
+                    <h3>INFORMAÇÕES</h3>
                     <li>disponivel 24Horas</li>
                 </menu>
 

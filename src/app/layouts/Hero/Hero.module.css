@@ -9,7 +9,7 @@
 }
 
 .title {
-
+  overflow: hidden;
   height: 23.177vw;
 
   margin-top: 5vw;
@@ -22,7 +22,12 @@
   color: var(--color-blue);
 }
 
-.title span {
+.spanAnimation{
+  display: block; 
+  transform: translateY(100%);
+}
+
+.textStroke {
   color: transparent;
   -webkit-text-stroke: 0.16vw #004b94;
   font-weight: 900;

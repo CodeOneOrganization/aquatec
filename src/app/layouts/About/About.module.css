@@ -33,7 +33,7 @@
 }
 
 .bottom {
-
+    overflow: hidden;
     margin-top: 3.354vw;
 
     display: flex;
@@ -54,6 +54,7 @@
 
 .card {
 
+    transform: translateY(100%);
     position: relative;
 
     display: flex;
