@@ -1,5 +1,6 @@
 import Nav from "./components/Nav/Nav";
 import About from "./layouts/About/About";
+import Disponibility from "./layouts/Disponibility/Disponibility";
 import Footer from "./layouts/Footer/Footer";
 import Hero from "./layouts/Hero/Hero";
 import Message from "./layouts/Message/Message";
@@ -26,6 +27,7 @@ export default function Home() {
           <div className="line"></div>
 
           <Hero />
+          <Disponibility/>
           <About />
           <Services />
           <Message/>
